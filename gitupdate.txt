@@ -1,0 +1,14 @@
+pegar projeto do git para atualizar sem ter
+a pasta do git no pc :
+- copia url do repositório
+- git bash no local do pc
+- git clone "link"
+
+
+atualizar:
+git add . 
+git config user.name "MoreiraSte"
+git config user.email "casagrandestephany91@gmail.com"
+git commit -m "desc"
+git push
+git push --set-upstream origin master
