@@ -69,9 +69,64 @@
     --smaller-font-size: .813rem;
   }
 }
+/*==============eventos============*/
+/* .column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
 
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
 
+.column img:hover {
+  opacity: 1;
+}
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+} */
+/*===============MAP==================*/
+
+.map {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90vh;
+  background: rgb(254,254,254);
+  background: linear-gradient(90deg, rgba(254,254,254,1) 24%, rgba(255,47,64,1) 89%);
+}
+.text_icon{
+  display: block;
+}
 /*=============== BASE ===============*/
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -83,6 +138,12 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  
+ 
+}
+.slider{
+ 
+  border: 2px solid rgb(189, 10, 10);
 }
 
 /* Caption text */
@@ -138,6 +199,28 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
+@media only screen and (max-width:960px){
+  .map {
+    display: block;
+  }
+  
+  .map iframe{
+    width: 90%;
+    height: 40%;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .text_icon h1{
+    margin-left: 30px;
+  }
+  .text_icon img{
+    margin-left: 30px;
+  }
+  .footer__copy{
+    margin-right: 50%;
+  }
+} 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
@@ -198,6 +281,9 @@ input {
 .main {
   overflow-x: hidden;
 }
+
+
+
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
@@ -432,13 +518,16 @@ input {
 }
 
 /*=============== ABOUT ===============*/
+
+
 .about__data {
   text-align: center;
 }
 
 .about__container {
   row-gap: 2.5rem;
-  height: 90vh;
+  height: 100vh;
+  
 }
 
 .about__description {
@@ -861,23 +950,11 @@ input {
   .video__container {
     padding: 0;
   }
+
+ 
 }
 
-/* For medium devices */
-@media screen and (min-width: 568px) {
-  .video__container {
-    display: grid;
-    grid-template-columns: .6fr;
-    justify-content: center;
-  }
-  .place__container {
-    grid-template-columns: repeat(3, max-content);
-  }
-  .subscribe__form {
-    width: 470px;
-    margin: 0 auto;
-  }
-}
+
 
 @media screen and (min-width: 768px) {
   body {
