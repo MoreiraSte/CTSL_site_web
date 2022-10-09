@@ -70,7 +70,7 @@
   }
 }
 /*==============eventos============*/
-/* .column {
+.column {
   float: left;
   width: 25%;
   padding: 10px;
@@ -111,7 +111,7 @@
   color: white;
   font-size: 35px;
   cursor: pointer;
-} */
+}
 /*===============MAP==================*/
 
 .map {
