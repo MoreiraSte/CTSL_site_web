@@ -79,6 +79,7 @@
 .column img {
   opacity: 0.8;
   cursor: pointer;
+  width: 80%;
 }
 
 .column img:hover {
@@ -111,6 +112,14 @@
   color: white;
   font-size: 35px;
   cursor: pointer;
+}
+
+.row{
+  margin-left: 30%;
+}
+#expandedImg{
+ 
+  margin-left: 25%;
 }
 /*===============MAP==================*/
 
@@ -219,6 +228,19 @@ img {vertical-align: middle;}
   }
   .footer__copy{
     margin-right: 50%;
+  }
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+  }
+  .column {
+    width: 50%;
+    padding: 10px;
+  }
+  #expandedImg{
+    width: 60%;
+    margin-left: 20%;
   }
 } 
 /* On smaller screens, decrease text size */
